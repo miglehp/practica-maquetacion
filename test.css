@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@300;400;500&family=Open+Sans&display=swap");
+
+* {
+  font-family: Montserrat, "Libre Baskerville", serif;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-bar {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(180, 180, 190);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-logo img {
+  height: 4rem;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  flex-grow: 0.25;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.nav-menu-item {
+  cursor: pointer;
+}
+
+.portrait {
+  padding: 5rem;
+  background-image: url("resources/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60rem;
+  /* display: none; */
+}
+
+.about-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about,
+.services {
+  width: 50vw;
+  padding: 5vw;
+  background-color: rgb(255, 255, 255);
+  /* display: none; */
+}
+
+.about {
+  padding-left: 15vw;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  background-image: url("resources/profile-bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+}
+
+.services {
+  padding-right: 15vw;
+}
+
+h2,
+h3 {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(100, 30, 0);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.abstract {
+  font-size: 1.5rem;
+  color: rgb(120, 120, 130);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.content {
+  font-family: "Libre Baskerville", serif;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 2rem;
+}
+
+.content .column {
+  display: flex;
+}
+
+.logo i {
+  color: rgb(100, 30, 0);
+  font-size: 3.5rem;
+  margin: 1.5rem;
+  margin-top: 0;
+}
+
+.column .subtitle {
+  font-weight: 700;
+}
+
+.column .text {
+  margin-bottom: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.skills {
+  color: rgb(180, 180, 190);
+  padding: 7.5vw;
+  padding-right: 50vw;
+  position: relative;
+  /* display: none; */
+}
+
+.skills::before {
+  content: "";
+  background-image: url("resources/skills-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  filter: contrast(1.65);
+}
+
+.skills-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-content {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  line-height: 2rem;
+  color: rgb(80, 80, 90);
+}
+
+.career-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* display: none; */
+}
+
+.career-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.career-content-1 {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(80, 80, 90);
+  margin-bottom: 4rem;
+}
+
+.career-divider {
+  margin: 3rem auto;
+  border-color: rgb(80, 80, 90);
+  width: 15vw;
+}
+
+.career-subcontainer-2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.experience-container,
+.education-container {
+  padding: 4rem;
+}
+
+.experience-container {
+  padding-left: 10vw;
+}
+
+.education-container {
+  padding-right: 10vw;
+}
+
+.experience-container h3,
+.education-container h3 {
+  margin-bottom: 5rem;
+}
+
+.detail {
+  padding: 0 4rem;
+  border-left: 1px solid;
+  border-color: rgb(180, 180, 190);
+  position: relative;
+}
+
+.career-icon {
+  background-color: rgb(100, 30, 0);
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.career-icon::before {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 1rem;
+  color: rgb(120, 120, 130);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.detail-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.detail-description {
+  font-family: "Libre Baskerville", serif;
+  padding-bottom: 2rem;
+}
+
+.portfolio-container {
+  background-color: rgb(220, 220, 235);
+  padding: 5rem 17.5vw;
+  text-align: center;
+  /* display: none; */
+}
+
+.portfolio-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.portfolio-description {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(80, 80, 90);
+}
+
+.portfolio-img-container {
+  column-count: 2;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 20vw;
+  text-align: center;
+  /* display: none; */
+}
+
+.counter-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.counter-separator {
+  border: 1px solid;
+  border-color: rgb(80, 80, 90);
+  width: 10rem;
+  margin: 2rem auto 1rem;
+}
+
+.counter-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(100, 30, 0);
+}
+
+.contact-container::before {
+  content: "";
+  background-image: url("resources/profile-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  filter: contrast(1.15);
+}
+
+.contact-container {
+  padding: 4rem 20vw;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  /* display: none; */
+}
+
+.contact-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(80, 80, 90);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  color: rgb(180, 180, 190);
+  font-weight: 600;
+  text-align: left;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid;
+  border-color: rgb(180, 180, 190);
+  color: rgb(220, 220, 235);
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-btn {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  border: 0;
+  outline: 0;
+  background-color: rgb(100, 30, 0);
+  color: rgb(220, 220, 235);
+  line-height: 4rem;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-details-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(220, 220, 235);
+  margin-bottom: 1rem;
+}
+
+.footer-details-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(120, 120, 130);
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    width: 100vw;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-separator {
+    margin: 2rem auto;
+    width: 90vw;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu-item {
+    padding: 1rem;
+  }
+
+  .portrait {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 8rem;
+  }
+
+  .portrait p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(220, 220, 235);
+    font-weight: 700;
+    opacity: 0.5;
+  }
+
+  .portrait h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .about-services {
+    flex-wrap: wrap;
+  }
+
+  .about,
+  .services {
+    width: 100vw;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .about .content,
+  .services .text {
+    text-align: left;
+  }
+
+  .skills {
+    padding: 3rem;
+    padding-bottom: 25rem;
+    text-align: center;
+  }
+
+  .skills::before {
+    background-size: cover;
+  }
+
+  .career-content-1{
+    padding: 3rem;
+  }
+
+  .career-divider{
+    border-color: rgb(180, 180, 190);
+    width: 50vw;
+  }
+
+  .career-subcontainer-2{
+    flex-wrap: wrap;
+  }
+
+  .portfolio-container {
+    padding: 3rem;
+  }
+
+  .portfolio-img-container {
+    column-count: 1;
+  }
+
+  .counter-container{
+    flex-direction: column;
+  }
+
+  .counter-container{
+    padding: 3rem;
+  }
+
+  .contact-title{
+    font-size: 2rem;
+  }
+
+  .contact-form-div form{
+    width: 80vw;
+  }
+
+  .contact-form-div input, .contact-form-div textarea, .contact-btn {
+    width: 80%;
+  }
+
+  .contact-footer {
+    flex-wrap: wrap;
+  }
+
+  .contact-footer-details{
+    padding-bottom: 2rem;
+  }
+}
